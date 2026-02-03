@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+</head>
+<body>
+    <script src="index.js" defer></script>
+    <main class = "container">
+            <header class = "input">
+                    <input class="inputcity" type="text" placeholder="Search">
+                    <button class = "sbtn" style="border : none">🔍</button>
+            </header>
+            <section class="winfo" style="display: none;">
+                <div class="location-date-container">
+                    <div class="location">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <h4 class="country">Hyderabad</h4>
+
+                    </div>
+                    <h4 class="datetxt regular-text" >wed, 02 feb</h5>
+                </div>
+                <div class="summary">
+                    <img class="wimg" src="weather/clouds.svg" alt="">
+                    <div class="summaryinfo">
+                        <h1 class="temp">73 °C</h1>
+                        <h3 class="condition">Clouds</h3>
+                    </div>
+                </div>
+                <div class="handw">
+                <div class="hum">
+                   <h5 class="humidity">Humidity</h5>
+                   <h5 class="hp">55%</h5>
+                </div>
+                <div class="win">
+                   <h5 class="wind">Wind Speeed</h5>
+                   <h5 class="wp">2M/s</h5>
+                </div>
+                </div>
+                <div class="fitems">
+                    <div class="fitem">
+                        <h5 class="fitemd">05 aug</h5>
+                        <img src="weather/thunderstorm.svg" class="fitemi">
+                        <h5 class="fitemt">26 °C</h5>
+                    </div>
+                    <div class="fitem">
+                        <h5 class="fitemd">05 aug</h5>
+                        <img src="weather/thunderstorm.svg" class="fitemi">
+                        <h5 class="fitemt">26 °C</h5>
+                    </div>
+                    <div class="fitem">
+                        <h5 class="fitemd">05 aug</h5>
+                        <img src="weather/thunderstorm.svg" class="fitemi">
+                        <h5 class="fitemt">26 °C</h5>
+                    </div>
+                    <div class="fitem">
+                        <h5 class="fitemd">05 aug</h5>
+                        <img src="weather/thunderstorm.svg" class="fitemi">
+                        <h5 class="fitemt">26 °C</h5>
+                    </div>
+                </div>
+            </section>
+            <section class="search">
+                <img src="message/search-city.png">
+            </section>
+      
+            <section class="notfound" style="display: none;">
+                <img src="message/not-found.png">
+                <h3 class="notfoundtext">ERROR<br><br>City Not Found<br>Try Again</h5>
+            </section>
+    </main>
+</body>
+</html>
